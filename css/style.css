@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Play:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -75,6 +75,7 @@ a {
     height: 420px;
     background: #222222;
     padding: 110px 0 0 360px;
+    position: relative;
 }
 
 .sub-tab-tit p {
@@ -94,7 +95,12 @@ a {
 .sub-tab-tit h3 span {
     color: #db5437;
 }
-
+.bottom-arr {
+    position: absolute;
+    top: 315px;
+    right: 75px;
+    z-index: 99;
+}
 .sub-right-area {
     width: 360px;
     height: 100%;
@@ -108,6 +114,32 @@ a {
     height: 704px;
     background: url("../img/sec-bg.png") no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.base-box {
+    position: absolute;
+    top: 375px;
+    left: 225px;
+    width: 850px;
+    height: 430px;
+}
+
+.base-box .bg-box {
+    width: 100%;
+    height: 100%;
+    background: #db5437;
+    position: relative;
+}
+
+.base-box .bg-box .inner-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    background: #fcfcfc;
+    padding: 110px 0 0 70px;
 }
 
 .third-area {
@@ -116,15 +148,35 @@ a {
     background: darkred;
 }
 .third-top {
-    width: 100%;
+    width: 1560px;
     height: 650px;
     background: #222222;
+    padding: 290px 0 0 250px;
+    float: left;
 }
 
+.third-top p {
+    text-align: right;
+    color: #888888;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0 60px 0 0;
+    margin-bottom: 45px;
+}
+
+.third-right {
+    width: 360px;
+    height: 100%;
+    float: right;
+    background: #2a2a2a;
+}
 .third-bottom {
-    width: 100%;
+    width: 1560px;
     height: 1110px;
     background: #363636;
+    float: left;
+    padding: 0 0 0 360px;
+    position: relative;
 }
 
 .our-story {
@@ -177,4 +229,31 @@ a {
     color: #db5437;
     border-bottom: 2px solid #db5437;
     background: #181818;
+}
+
+.inner-box p {
+    font-size: 38px;
+    font-family: 'Play', sans-serif;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.inner-box p span {
+    color: #db5437;
+    font-size: 50px;
+}
+
+.bottom-content {
+    width: 1200px;
+    height: 100%;
+    padding-top: 120px;
+}
+
+.left-bg {
+    width: 950px;
+    height: 320px;
+    background: #db5437;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
