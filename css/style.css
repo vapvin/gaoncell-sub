@@ -1,9 +1,18 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
 }
 
 .sub-wrap {
@@ -24,7 +33,31 @@
     background: url("../img/top-bnr.png") no-repeat;
     background-size: cover;
     float: left;
+    padding: 310px 0 0;
 }
+
+
+.bnr-txt {
+    font-size: 80px;
+    color: white;
+    margin-left: 360px;
+}
+
+.under-bar {
+    width: 970px;
+    height: 1px;
+    background: #fff;
+}
+
+.btm-text {
+    margin-left: 360px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Play', sans-serif;
+}
+
 .sub-tabs {
     width: 1560px;
     height: 480px;
@@ -35,11 +68,31 @@
     width: 100%;
     height: 60px;
     background: #121212;
+    padding: 0 360px;
 }
 .sub-tab-tit {
     width: 100%;
     height: 420px;
     background: #222222;
+    padding: 110px 0 0 360px;
+}
+
+.sub-tab-tit p {
+    font-family: 'Play', sans-serif;
+    color: #dddddd;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.sub-tab-tit h3 {
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+}
+
+.sub-tab-tit h3 span {
+    color: #db5437;
 }
 
 .sub-right-area {
@@ -92,4 +145,36 @@
     height: 375px;
     background: url("../img/contacts.png") no-repeat;
     background-size: cover;
+}
+
+.inner-nav {
+    width: 720px;
+    height: 100%;
+}
+.inner-nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.inner-nav ul li {
+    width: 240px;
+    height: 100%;
+}
+.inner-nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-family: 'Play', sans-serif;
+    color: #535353;
+}
+
+.inner-nav ul li a.activated {
+    color: #db5437;
+    border-bottom: 2px solid #db5437;
+    background: #181818;
 }
